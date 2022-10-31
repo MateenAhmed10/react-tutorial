@@ -1,0 +1,49 @@
+.states {
+    background-color: rgb(127, 199, 199);
+    padding: 0.75rem;
+    margin-top: 2rem;
+}
+
+.states #title {
+    margin-bottom: 1rem;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.counter button {
+    width: auto;
+    width: 100px;
+}
+
+.counter button.decrease {
+    box-shadow: 0 0 10px rgb(255, 25, 25);
+    border: 1px solid rgb(179, 4, 4);
+}
+
+.counter button.increase {
+    box-shadow: 0 0 10px rgb(4, 223, 4);
+    border: 1px solid rgb(6, 145, 6);
+}
+
+.green {
+    color: rgb(6, 145, 6);
+}
+
+.red {
+    color: rgb(255, 25, 25);
+}
+
+.counter button:active {
+    box-shadow: none;
+    border: none;
+}
+
+.counter p {
+    font-size: 2rem;
+    font-weight: bold;
+}

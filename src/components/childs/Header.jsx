@@ -5,7 +5,7 @@ const Header = () => {
                 Bootcamp 2020, Class 2 React
             </h1>
             <p>
-                Hello from Mateen Shahbaz Ahmed
+                Hello from <strong>Mateen Shahbaz Ahmed</strong>
             </p>
         </header>
     );

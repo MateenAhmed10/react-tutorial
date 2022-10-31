@@ -12,14 +12,31 @@ h4 {
     font-size: 1.5rem;
 }
 
+img {
+    width: 100%;
+}
+
 p {
     margin: 1rem 0;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
+li {
+    text-align: left;
+}
+
+.alert {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
 .App {
     text-align: center;
+    background: rgb(24, 23, 23);
+    overflow: auto;
 }
 
 .App__header {
@@ -28,6 +45,64 @@ p {
 
 .box {
     background-color: #f5f6f7;
-    border: 2px solid #ccc;
     padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+}
+
+.child__container {
+    min-width: 200px;
+    max-width: 100%;
+    margin: 0.75rem auto;
+    background-color: #c1c1;
+    padding: 1.2rem;
+    display: flex;
+    align-items:  center;
+}
+
+.info {
+    margin-right: 1rem;
+}
+
+.room {
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button {
+    padding: 0.75rem;
+    width: 200px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.light {
+    background-color: #fff;
+    color: #000;
+    border: 2px dotted #000;
+}
+
+.dark {
+    background-color: rgb(22, 12, 22);
+    color: #f5f6f7;
+    border: 2px dotted #f5f6f7;
+}
+
+@media screen and (max-width: 660px) {
+    .child__container {
+        flex-direction: column;
+    }
+
+    .room {
+        flex-direction: column;
+    }
+
+    button {
+        margin-top: 0.75rem;
+    }
 }
